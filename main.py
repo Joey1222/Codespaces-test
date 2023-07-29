@@ -2,7 +2,7 @@ from argparse import ArgumentParser, Namespace
 from pathlib import Path
 import platform
 
-with open('version.txt', 'r') as f:
+with open('version.txt', 'r', encoding="utf-8") as f:
     file = f.readlines()[0]
 
 parser = ArgumentParser()
