@@ -3,7 +3,6 @@ from pathlib import Path
 import platform
 
 class InvaildFilePathError(Exception):
-
     def __init__(self, pathtype):
         self.pathtype = str(pathtype)
         print(f'The {self.pathtype} file doesn\'t exist!')
